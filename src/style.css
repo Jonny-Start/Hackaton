@@ -1,3 +1,82 @@
-body {
-    background: black;
+body#login {
+    text-align: center;
+    background-color: #a2ce6a;
+    padding-top: 40%;
+}
+
+body#login img {
+    width: 8em;
+}
+
+body#login h1 {
+    font-size: 1.3rem;
+}
+
+body#login form {
+    font-size: 1.3rem;
+}
+
+body#login input,
+select {
+    width: 80%;
+    height: 1.5em;
+    font-size: 1.3rem;
+}
+
+body#login span {
+    margin-top: 4rem;
+    font-size: 1rem;
+}
+
+
+/* body#login div#container {
+    width: 80%;
+    height: auto;
+    text-align: center;
+    text-align-last: center;
+    align-items: center;
+} */
+
+body#login button {
+    border-radius: 25px;
+    width: 50%;
+    font-size: 1.3rem;
+    margin-top: 1.5em;
+}
+
+* {
+    font-family: 'Open Sans';
+}
+
+.header {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.cards {
+    margin-top: 20px;
+}
+
+.card {
+    margin-bottom: 8px;
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 0px 1px 3px 0px #000000;
+}
+
+.card>.card-title,
+p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.card-title {
+    font-size: 1rem;
+}
+
+.text-green {
+    color: #b7c51a;
+    font-weight: 700;
 }
