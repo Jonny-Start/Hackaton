@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaxisLibres2.0</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body id="login">
+    <img src="/images/logo.png" alt="logo" />
+    <h1>Inicio de sesion</h1>
+    <div class="form">
+        <div id="container">
+            <label id="userLogin">Usuario/Correo Electronico <br />
+                <input type="email" id="emailLogin">
+            </label>
+            <br />
+
+            <label>Contraseña <br />
+                <input type="password" id="passLogin">
+            </label>
+
+            <br />
+
+            <label>Tipo de usuario
+                <br />
+                <select name="user" id="typeUser">
+                    <option selected disabled>Seleccione el usuario</option>
+                    <option value="client">Cliente</option>
+                    <option value="driver">Conductor</option>
+                </select>
+            </label>
+
+            <br />
+
+        </div>
+        <button type="submit" onclick="loginSubmit()">Iniciar sesion</button>
+    </div>
+    <h6><a href="#">Registrate</a> / <a href="#">Olvide mi contraseña</a></h6>
+    <script src="src/script.js"></script>
+</body>
+
+</html>
