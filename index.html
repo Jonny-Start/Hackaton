@@ -8,8 +8,37 @@
     <link rel="stylesheet" href="src/style.css">
 </head>
 
-<body>
-    <img src="" alt="">
+<body id="login">
+    <img src="/images/logo.png" alt="logo" />
+    <h1>Inicio de sesion</h1>
+    <div id="container">
+
+        <Label id="userLogin">Usuario/Correo Electronico <br />
+        <input type="email" id="emailLogin">
+    </Label>
+        <br />
+
+        <Label>Contraseña <br />
+            <input type="password">
+        </Label>
+
+        <br />
+
+        <label>Tipo de usuario 
+            <br />
+            <select name="user" id="user">
+                <option selected>User</option>
+                <option value="">Conductor</option>
+                <option value="">Cliente</option>
+            </select>
+        </label>
+
+        <br />
+
+    </div>
+    <button type="submit">Iniciar sesion</button>FF
+
+    <h6><a href="#">Registrate</a> / <a href="#">Olvide mi contraseña</a></h6>
     <script src="src/script.js"></script>
 </body>
 
