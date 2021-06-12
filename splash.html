@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaxisLibres2.0</title>
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0px;
+    }
+
+    .bg {
+      /* The image used */
+      background-image: url("images/splash.png");
+
+      /* Full height */
+      height: 100%;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body style="background: white;">
+
+  <div class="bg" id="btn-splash"></div>
+
+  <script>
+    var element = document.getElementById("btn-splash");
+    element.onclick = function () {
+      window.location="index.html";
+    }
+  </script>
+</body>
+
+</html>
