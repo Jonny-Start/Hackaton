@@ -2,44 +2,41 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TaxisLibres2.0</title>
-    <link rel="stylesheet" href="src/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaxisLibres2.0</title>
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0px;
+    }
+
+    .bg {
+      /* The image used */
+      background-image: url("images/splash.png");
+
+      /* Full height */
+      height: 100%;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
 </head>
 
-<body id="login">
-    <img src="/images/logo.png" alt="logo" />
-    <h1>Inicio de sesion</h1>
-    <form name="myForm" method="post">
-        <div id="container">
-            <label id="userLogin">Usuario/Correo Electronico <br />
-        <input type="email" id="emailLogin">
-    </label>
-            <br />
+<body style="background: white;">
 
-            <label>Contraseña <br />
-            <input type="password" id="passLogin">
-        </label>
+  <div class="bg" id="btn-splash"></div>
 
-            <br />
-
-            <label>Tipo de usuario 
-            <br />
-            <select name="user" id="typeUser">
-                <option selected>User</option>
-                <option value="1">Conductor</option>
-                <option value="2">Cliente</option>
-            </select>
-        </label>
-
-            <br />
-
-        </div>
-        <button type="submit" onclick="loginSubmit()">Iniciar sesion</button>
-    </form>
-    <h6><a href="#">Registrate</a> / <a href="#">Olvide mi contraseña</a></h6>
-    <script src="src/script.js"></script>
+  <script>
+    var element = document.getElementById("btn-splash");
+    element.onclick = function () {
+      window.location="home.html";
+    }
+  </script>
 </body>
 
 </html>
